@@ -25,6 +25,5 @@ angular.module('myApp.interview', ['ngRoute'])
 
     .controller('ViewController', [function() {
         var ctrl = this;
-        ctrl.message = 'Hello World';
         ctrl.toggled = true;
     }]);
