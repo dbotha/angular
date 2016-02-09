@@ -9,20 +9,7 @@ angular.module('myApp.interview', ['ngRoute'])
             controllerAs: "ctrl"
         });
     }])
-
-    .directive("interviewToggleButton", function() {
-        return {
-            controller: ["$scope", function($scope) {
-                this.toggled = $scope.toggled;
-            }],
-            controllerAs: "ctrl",
-            scope: {
-                toggled: "="
-            },
-            templateUrl: 'interview/toggle_button_view.html'
-        };
-    })
-
+    
     .controller('ViewController', [function() {
         var ctrl = this;
         ctrl.toggled = true;
